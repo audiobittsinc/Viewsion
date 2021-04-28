@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD384CBC2639B0EB00A38FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD384CBB2639B0EB00A38FEB /* AppDelegate.swift */; };
+		FD384CBE2639B0EB00A38FEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD384CBD2639B0EB00A38FEB /* SceneDelegate.swift */; };
+		FD384CC12639B0EB00A38FEB /* Viewsion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD384CBF2639B0EB00A38FEB /* Viewsion.xcdatamodeld */; };
+		FD384CC32639B0EB00A38FEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD384CC22639B0EB00A38FEB /* ContentView.swift */; };
+		FD384CC52639B0F200A38FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD384CC42639B0F200A38FEB /* Assets.xcassets */; };
+		FD384CC82639B0F200A38FEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD384CC72639B0F200A38FEB /* Preview Assets.xcassets */; };
+		FD384CCB2639B0F200A38FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD384CC92639B0F200A38FEB /* LaunchScreen.storyboard */; };
+		FD384CD62639B0F200A38FEB /* ViewsionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD384CD52639B0F200A38FEB /* ViewsionTests.swift */; };
+		FD384CE12639B0F200A38FEB /* ViewsionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD384CE02639B0F200A38FEB /* ViewsionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD384CD22639B0F200A38FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD384CB02639B0EB00A38FEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD384CB72639B0EB00A38FEB;
+			remoteInfo = Viewsion;
+		};
+		FD384CDD2639B0F200A38FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD384CB02639B0EB00A38FEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD384CB72639B0EB00A38FEB;
+			remoteInfo = Viewsion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD384CB82639B0EB00A38FEB /* Viewsion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viewsion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD384CBB2639B0EB00A38FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD384CBD2639B0EB00A38FEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD384CC02639B0EB00A38FEB /* Viewsion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viewsion.xcdatamodel; sourceTree = "<group>"; };
+		FD384CC22639B0EB00A38FEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD384CC42639B0F200A38FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD384CC72639B0F200A38FEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD384CCA2639B0F200A38FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD384CCC2639B0F200A38FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD384CD12639B0F200A38FEB /* ViewsionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD384CD52639B0F200A38FEB /* ViewsionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsionTests.swift; sourceTree = "<group>"; };
+		FD384CD72639B0F200A38FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD384CDC2639B0F200A38FEB /* ViewsionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD384CE02639B0F200A38FEB /* ViewsionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsionUITests.swift; sourceTree = "<group>"; };
+		FD384CE22639B0F200A38FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD384CB52639B0EB00A38FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CCE2639B0F200A38FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CD92639B0F200A38FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD384CAF2639B0EB00A38FEB = {
+			isa = PBXGroup;
+			children = (
+				FD384CBA2639B0EB00A38FEB /* Viewsion */,
+				FD384CD42639B0F200A38FEB /* ViewsionTests */,
+				FD384CDF2639B0F200A38FEB /* ViewsionUITests */,
+				FD384CB92639B0EB00A38FEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD384CB92639B0EB00A38FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD384CB82639B0EB00A38FEB /* Viewsion.app */,
+				FD384CD12639B0F200A38FEB /* ViewsionTests.xctest */,
+				FD384CDC2639B0F200A38FEB /* ViewsionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD384CBA2639B0EB00A38FEB /* Viewsion */ = {
+			isa = PBXGroup;
+			children = (
+				FD384CBB2639B0EB00A38FEB /* AppDelegate.swift */,
+				FD384CBD2639B0EB00A38FEB /* SceneDelegate.swift */,
+				FD384CC22639B0EB00A38FEB /* ContentView.swift */,
+				FD384CC42639B0F200A38FEB /* Assets.xcassets */,
+				FD384CC92639B0F200A38FEB /* LaunchScreen.storyboard */,
+				FD384CCC2639B0F200A38FEB /* Info.plist */,
+				FD384CBF2639B0EB00A38FEB /* Viewsion.xcdatamodeld */,
+				FD384CC62639B0F200A38FEB /* Preview Content */,
+			);
+			path = Viewsion;
+			sourceTree = "<group>";
+		};
+		FD384CC62639B0F200A38FEB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD384CC72639B0F200A38FEB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD384CD42639B0F200A38FEB /* ViewsionTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD384CD52639B0F200A38FEB /* ViewsionTests.swift */,
+				FD384CD72639B0F200A38FEB /* Info.plist */,
+			);
+			path = ViewsionTests;
+			sourceTree = "<group>";
+		};
+		FD384CDF2639B0F200A38FEB /* ViewsionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD384CE02639B0F200A38FEB /* ViewsionUITests.swift */,
+				FD384CE22639B0F200A38FEB /* Info.plist */,
+			);
+			path = ViewsionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD384CB72639B0EB00A38FEB /* Viewsion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD384CE52639B0F200A38FEB /* Build configuration list for PBXNativeTarget "Viewsion" */;
+			buildPhases = (
+				FD384CB42639B0EB00A38FEB /* Sources */,
+				FD384CB52639B0EB00A38FEB /* Frameworks */,
+				FD384CB62639B0EB00A38FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Viewsion;
+			productName = Viewsion;
+			productReference = FD384CB82639B0EB00A38FEB /* Viewsion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD384CD02639B0F200A38FEB /* ViewsionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD384CE82639B0F200A38FEB /* Build configuration list for PBXNativeTarget "ViewsionTests" */;
+			buildPhases = (
+				FD384CCD2639B0F200A38FEB /* Sources */,
+				FD384CCE2639B0F200A38FEB /* Frameworks */,
+				FD384CCF2639B0F200A38FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD384CD32639B0F200A38FEB /* PBXTargetDependency */,
+			);
+			name = ViewsionTests;
+			productName = ViewsionTests;
+			productReference = FD384CD12639B0F200A38FEB /* ViewsionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD384CDB2639B0F200A38FEB /* ViewsionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD384CEB2639B0F200A38FEB /* Build configuration list for PBXNativeTarget "ViewsionUITests" */;
+			buildPhases = (
+				FD384CD82639B0F200A38FEB /* Sources */,
+				FD384CD92639B0F200A38FEB /* Frameworks */,
+				FD384CDA2639B0F200A38FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD384CDE2639B0F200A38FEB /* PBXTargetDependency */,
+			);
+			name = ViewsionUITests;
+			productName = ViewsionUITests;
+			productReference = FD384CDC2639B0F200A38FEB /* ViewsionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD384CB02639B0EB00A38FEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "AudioBitts Inc";
+				TargetAttributes = {
+					FD384CB72639B0EB00A38FEB = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					FD384CD02639B0F200A38FEB = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = FD384CB72639B0EB00A38FEB;
+					};
+					FD384CDB2639B0F200A38FEB = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = FD384CB72639B0EB00A38FEB;
+					};
+				};
+			};
+			buildConfigurationList = FD384CB32639B0EB00A38FEB /* Build configuration list for PBXProject "Viewsion" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD384CAF2639B0EB00A38FEB;
+			productRefGroup = FD384CB92639B0EB00A38FEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD384CB72639B0EB00A38FEB /* Viewsion */,
+				FD384CD02639B0F200A38FEB /* ViewsionTests */,
+				FD384CDB2639B0F200A38FEB /* ViewsionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD384CB62639B0EB00A38FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD384CCB2639B0F200A38FEB /* LaunchScreen.storyboard in Resources */,
+				FD384CC82639B0F200A38FEB /* Preview Assets.xcassets in Resources */,
+				FD384CC52639B0F200A38FEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CCF2639B0F200A38FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CDA2639B0F200A38FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD384CB42639B0EB00A38FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD384CBC2639B0EB00A38FEB /* AppDelegate.swift in Sources */,
+				FD384CC12639B0EB00A38FEB /* Viewsion.xcdatamodeld in Sources */,
+				FD384CC32639B0EB00A38FEB /* ContentView.swift in Sources */,
+				FD384CBE2639B0EB00A38FEB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CCD2639B0F200A38FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD384CD62639B0F200A38FEB /* ViewsionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD384CD82639B0F200A38FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD384CE12639B0F200A38FEB /* ViewsionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD384CD32639B0F200A38FEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD384CB72639B0EB00A38FEB /* Viewsion */;
+			targetProxy = FD384CD22639B0F200A38FEB /* PBXContainerItemProxy */;
+		};
+		FD384CDE2639B0F200A38FEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD384CB72639B0EB00A38FEB /* Viewsion */;
+			targetProxy = FD384CDD2639B0F200A38FEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD384CC92639B0F200A38FEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD384CCA2639B0F200A38FEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD384CE32639B0F200A38FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD384CE42639B0F200A38FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD384CE62639B0F200A38FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Viewsion/Preview Content\"";
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Viewsion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.Viewsion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD384CE72639B0F200A38FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Viewsion/Preview Content\"";
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Viewsion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.Viewsion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD384CE92639B0F200A38FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				INFOPLIST_FILE = ViewsionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.ViewsionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viewsion.app/Viewsion";
+			};
+			name = Debug;
+		};
+		FD384CEA2639B0F200A38FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				INFOPLIST_FILE = ViewsionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.ViewsionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viewsion.app/Viewsion";
+			};
+			name = Release;
+		};
+		FD384CEC2639B0F200A38FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				INFOPLIST_FILE = ViewsionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.ViewsionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Viewsion;
+			};
+			name = Debug;
+		};
+		FD384CED2639B0F200A38FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNTQ8F2RSX;
+				INFOPLIST_FILE = ViewsionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiobittsinc.ViewsionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Viewsion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD384CB32639B0EB00A38FEB /* Build configuration list for PBXProject "Viewsion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD384CE32639B0F200A38FEB /* Debug */,
+				FD384CE42639B0F200A38FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD384CE52639B0F200A38FEB /* Build configuration list for PBXNativeTarget "Viewsion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD384CE62639B0F200A38FEB /* Debug */,
+				FD384CE72639B0F200A38FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD384CE82639B0F200A38FEB /* Build configuration list for PBXNativeTarget "ViewsionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD384CE92639B0F200A38FEB /* Debug */,
+				FD384CEA2639B0F200A38FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD384CEB2639B0F200A38FEB /* Build configuration list for PBXNativeTarget "ViewsionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD384CEC2639B0F200A38FEB /* Debug */,
+				FD384CED2639B0F200A38FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD384CBF2639B0EB00A38FEB /* Viewsion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD384CC02639B0EB00A38FEB /* Viewsion.xcdatamodel */,
+			);
+			currentVersion = FD384CC02639B0EB00A38FEB /* Viewsion.xcdatamodel */;
+			path = Viewsion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD384CB02639B0EB00A38FEB /* Project object */;
+}
