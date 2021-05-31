@@ -10,12 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack(){
+            Color(.white)
+                .edgesIgnoringSafeArea(.all)
+            VStack(){
+                Text("Hello, World! \n" +
+                     "How are you? \n" +
+                     "Welcome to Viewsion!")
+                    .font(.title)
+                    .fontWeight(.medium)
+            }.multilineTextAlignment(.center)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }

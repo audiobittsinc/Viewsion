@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1001,
+        "userId": 1001,
+        "movieId": 1001,
+        "isPaused": false,
+        "status": 1002
+    }
+]
