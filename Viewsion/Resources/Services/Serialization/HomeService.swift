@@ -1,0 +1,34 @@
+//
+//  HomeService.swift
+//  Viewsion
+//
+//  Created by Denzil Dsa on 10/5/21.
+//  Copyright © 2021 AudioBitts Inc. All rights reserved.
+//
+
+import Foundation
+
+
+final class HomeService {
+    
+    func Get(userId: String, completion: @escaping (Home) -> Void) {
+        let url = URL(string: BackendUrl + "/api/home")
+        
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONEncoder().encode(userId)
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let response = response as? HTTPURLResponse,
+                  response.statusCode == 200,
+                  let data = data,
+                  let json = try? JSONDecoder().decode(Home.self, from: data) else {
+                print("Failed to retrieve Home data from server.")
+                return
+            }
+            print("Successfully retrieved Home data.")
+            completion(json)
+        }
+    }
+}
