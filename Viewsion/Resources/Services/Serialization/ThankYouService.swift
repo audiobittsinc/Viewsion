@@ -10,24 +10,26 @@ import Foundation
 
 final class ThankYouService {
     
-    func Get(userId: UserId, completion: @escaping (ThankYou) -> Void) {
-        let url = URL(string: BackendUrl + "/api/thankyou")
+    func Get(completion: @escaping (Result<ThankYou,ViewError>) -> Void) {
+        let url = URL(string: BackendUrl + "/api/thankyou/" + vUserId)
         
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try? JSONEncoder().encode(userId)
+        request.setValue("Bearer \(vToken)", forHTTPHeaderField: "Authorization")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let response = response as? HTTPURLResponse,
                   response.statusCode == 200,
                   let data = data,
                   let json = try? JSONDecoder().decode(ThankYou.self, from: data) else {
-                print("Failed to retrieve Thank You data from server.")
-                return
-            }
+                    print(response as Any)
+                      completion(.failure(.thankyouViewNotDownloaded))
+                      print("Failed to retrieve Thank You data from server.")
+                      return
+                  }
             print("Successfully retrieved Thank You data.")
-            completion(json)
-        }
+            completion(.success(json))
+        }.resume()
     }
 }

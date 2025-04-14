@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Player: Codable, Hashable {
+    var profile: Profile
+    var movie: Movie
+    var reactions: [Reaction]
+}

@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class SignUpViewModel: ObservableObject {
+    @Published var user: User?
+    @Published var userIsLoggedIn: Bool?
+    
+    private var service: RegistrationService
+    
+    init() {
+        service = RegistrationService()
+    }
+    
+    func Create(user: User) -> Void {
+    }
+    
+    func isUserAuthenticated() -> Bool {
+        userIsLoggedIn = true
+        return true
+    }
+}

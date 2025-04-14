@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct Product: Codable, Hashable, Identifiable {
+struct Payment: Codable, Hashable, Identifiable {
     var id: String?
-    var productId: String?
+    var appProductId: String?
     var name: String?
     var units: Int?
     var price: Int?
     var quantity: Int?
     var userId: String?
-    
 }

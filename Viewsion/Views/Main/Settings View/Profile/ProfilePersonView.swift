@@ -11,7 +11,6 @@ import SwiftUI
 struct ProfilePersonView: View {
     var body: some View {
         VStack {
-            
             //Picture Stack
             Group {
                     VStack {

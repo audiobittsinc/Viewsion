@@ -15,12 +15,10 @@ enum SessionSource: Int {
 }
 
 struct Token {
-    
     var id: Int?
     var user: User
     var value: String
     var source: SessionSource
     var createdAt: Date?
     var updatedAt: Date?
-    
 }

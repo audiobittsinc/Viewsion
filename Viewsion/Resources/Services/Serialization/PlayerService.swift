@@ -24,9 +24,9 @@ final class PlayerService {
                   response.statusCode == 200,
                   let data = data,
                   let json = try? JSONDecoder().decode(Player.self, from: data) else {
-                print("Failed to retrieve Player data from server.")
-                return
-            }
+                      print("Failed to retrieve Player data from server.")
+                      return
+                  }
             print("Successfully retrieved Player data.")
             completion(json)
         }

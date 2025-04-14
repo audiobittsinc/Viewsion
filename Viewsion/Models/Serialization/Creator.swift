@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Creator: Decodable, Hashable {
+    var profile: Profile?
+    var reactedMovies: [Movie]?
+    var thankyouMovie: Movie?
+    var highlightMovie: Movie?
+}

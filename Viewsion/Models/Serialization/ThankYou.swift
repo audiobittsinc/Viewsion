@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct ThankYou: Decodable {
+    var profiles: [Profile] = []
+    var movies: [Movie] = []
+}

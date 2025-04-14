@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Product: Codable, Hashable, Identifiable {
+    var id: String?
+    var productId: String?
+    var title: String?
+    var description: String?
+    var quantity: Int?
+    var price: Int?
+    var imageName: String?
+}

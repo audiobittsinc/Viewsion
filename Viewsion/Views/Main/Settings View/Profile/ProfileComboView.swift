@@ -10,7 +10,35 @@ import SwiftUI
 
 struct ProfileComboView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 44, height: 44)
+                    .clipShape(Circle())
+                    .padding()
+                Text("Denzil D'sa")
+                Text("CEO")
+                Text("AudioBitts Inc")
+                HStack {
+                    List {
+                        NavigationLink("SOCIAL") {
+                            
+                        }.padding()
+                        NavigationLink("COLLECTION") {
+                            
+                        }.padding()
+                        NavigationLink("NEW") {
+                            
+                        }.padding()
+                        NavigationLink("SETTINGS") {
+                            
+                        }.padding()
+                    }
+                }
+            }
+            Spacer()
+        }
     }
 }
 

@@ -9,7 +9,9 @@
 import Foundation
 import AVFoundation
 
-class CreatorsViewModel: ObservableObject {
+/// The Creator 2 View Model prepares the Creators Stream, which is a stream of videos and a X row of Liked videos above each video.
+
+class Creators2ViewModel: ObservableObject {
     @Published var creators: [Creator] = []
     @Published var video: Video?
     @Published var movie: Movie = Movie()

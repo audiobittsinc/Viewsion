@@ -10,18 +10,13 @@ import Foundation
 import SwiftUI
 
 struct User: Codable, Hashable, Identifiable {
-    struct Public: Codable {
-      let username: String
-      let id: Int
-      //let createdAt: Date?
-      //let updatedAt: Date?
-    }
-    
-    var id: Int?
-    var username: String
-    var email: String
+    var id: String?
+    var username: String?
+    var password: String?
+    var email: String?
+    var profile: Profile?
+    var stripeAccount: StripeAccount?
+    var jwtToken: String?
     var createdAt: Date?
     var updatedAt: Date?
-    
-
 }

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct ReportedContent: Codable {
+    var id: String?
+    var movieId: String?
+    var username: String?
+    var comment: String?
+}

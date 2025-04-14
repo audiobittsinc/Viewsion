@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Home: Decodable {
+    var movies: [Movie]?
+}

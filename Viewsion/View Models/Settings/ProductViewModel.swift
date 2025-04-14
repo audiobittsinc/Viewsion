@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class ProductViewModel: ObservableObject {
+    @Published var emojis: [Emoji]?
+    
+    var service: ProductService?
+    
+    init() {
+        service = ProductService()
+    }
+    
+    func Get() {
+        ProductService.products
+    }
+}

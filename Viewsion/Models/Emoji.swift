@@ -10,12 +10,7 @@ import Foundation
 import SwiftUI
 
 struct Emoji: Codable, Hashable, Identifiable {
-    var id: Int?
-    var name: String
-    var emojiId: Int
-    var userId: Int
-    var videoId: Int
-    var emojiType: EmojiType
-    var emojiUrl: String
-    
+    var id: String?
+    var productId: String?
+    var name: String?
 }

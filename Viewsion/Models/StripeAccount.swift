@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct StripeAccount: Codable, Hashable, Identifiable {
+    var id: String?
+    var accountId: String?
+    var defaultCurrency: String?
+}

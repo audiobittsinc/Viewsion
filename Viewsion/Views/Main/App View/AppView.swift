@@ -11,21 +11,21 @@ import SwiftUI
 struct AppView: View {
     var body: some View {
         TabView {
-            HomeView()
+            Home2View()
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            CreatorsView()
+            Creators2View()
                 .tabItem {
                     Label("Creators", systemImage: "video.fill.badge.checkmark")
                 }
-            ThankYouView()
+            ThankYou2View()
                 .tabItem {
                     Label("Thank you", systemImage: "suit.heart.fill")
                 }
-            SettingsView()
+            Settings2View()
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape.fill")
+                    Label("Profile", systemImage: "person.fill")
                 }
         }
         .background(Color.clear)

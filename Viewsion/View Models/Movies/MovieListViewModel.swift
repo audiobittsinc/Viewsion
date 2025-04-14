@@ -19,20 +19,18 @@ class MovieListViewModel: ObservableObject {
     
     func fetchMovies() {
         cancellable = movieService.fetchMovies().sink(receiveCompletion: { _ in
-            
         }, receiveValue: { movieContainer in
             self.movieViewModels = movieContainer.data.movies.map { MovieViewModel(movie: $0) }
             print(self.movieViewModels)
         })
     }
-    
 }
 
 struct MovieViewModel: Codable, Hashable {
     private var movie: Movie
     
     var title: String {
-        return movie.title
+        return movie.title!
     }
     
     var mov: Movie {

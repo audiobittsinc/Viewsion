@@ -11,7 +11,9 @@ import Combine
 import SwiftUI
 import AVFoundation
 
-class ThankYouViewModel: ObservableObject {
+/// The Thank You 2 View Model prepares the Thank You Stream, which is a organized vertically scrollable grid of Videos in X and Y rows.
+
+class ThankYou2ViewModel: ObservableObject {
     @Published var thankYou: ThankYou = ThankYou()
     @Published var video: Video?
     @Published var movie: Movie = Movie()

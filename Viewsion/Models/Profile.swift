@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Profile: Codable, Hashable, Identifiable {
+    var id: String?
+    var creatorId: String?
+    var displayName: String?
+    var bio: String?
+    var twitterId: String?
+    var website: String?
+    var profileImageUrl: String?
+}

@@ -15,7 +15,11 @@ struct ThankYouView: View {
     @State var isPlayerPresented: Bool = false
     let data = (1...50).map { "Item \($0)" }
     let columns = [GridItem(.adaptive(minimum: 95))]
-    init() {viewModel.Get()}
+    
+    init() {
+        viewModel.Get()
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {

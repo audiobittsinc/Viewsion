@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Reaction: Codable, Hashable, Identifiable {
+    var id: String?
+    var movieId: String?
+    var userId: String?
+    var name: String?
+    var createdAt: Date?
+    var updatedAt: Date?
+}
+

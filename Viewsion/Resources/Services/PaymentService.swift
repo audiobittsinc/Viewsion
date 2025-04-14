@@ -24,11 +24,10 @@ final class PaymentService {
                   response.statusCode == 200,
                   let data = data,
                   let json = try? JSONDecoder().decode(Home.self, from: data) else {
-                print(response)
-                completion(.failure(.homeViewNotDownloaded))
-                return
-            }
-            
+                      print(response)
+                      completion(.failure(.homeViewNotDownloaded))
+                      return
+                  }
             print("Successfully retrieved Home data.")
             completion(.success(json))
         }.resume()
@@ -47,11 +46,10 @@ final class PaymentService {
                   response.statusCode == 200,
                   let data = data,
                   let json = try? JSONDecoder().decode(Home.self, from: data) else {
-                print(response)
-                completion(.failure(.homeViewNotDownloaded))
-                return
-            }
-            
+                      print(response)
+                      completion(.failure(.homeViewNotDownloaded))
+                      return
+                  }
             print("Successfully retrieved Home data.")
             completion(.success(json))
         }.resume()
@@ -70,11 +68,10 @@ final class PaymentService {
                   response.statusCode == 200,
                   let data = data,
                   let json = try? JSONDecoder().decode(Home.self, from: data) else {
-                print(response)
-                completion(.failure(.homeViewNotDownloaded))
-                return
-            }
-            
+                      print(response)
+                      completion(.failure(.homeViewNotDownloaded))
+                      return
+                  }
             print("Successfully retrieved Home data.")
             completion(.success(json))
         }.resume()

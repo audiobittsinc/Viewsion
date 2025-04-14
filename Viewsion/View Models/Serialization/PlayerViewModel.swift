@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import AVFoundation
+import SwiftUI
 
 class PlayerViewModel: ObservableObject {
     @Published var player: Player?
+    @Published var index: Int = 0
+    @Published var data: [Video] = []
     
-    init() {
-        
+    init(videoData: [Video]) {
+        self.data = videoData
     }
     
     

@@ -10,22 +10,14 @@ import Foundation
 import SwiftUI
 
 struct Movie: Codable, Hashable, Identifiable {
-    var id: Int?
-    var producerId: Int
-    var title: String
-    var videoUrl: String
-    var videoThumbnail: String
-    var description: String
-    var trailerUrl: String
-    var duration: String
-    var releaseDate: Date?
-    var genre: Genre
-    var category: [String] //Category Keywords "technology" "music" "video games"
-    var poster: String
-    var photos: [String]
-    var cast: [String]
-    var createdAt: Date?
-    var updatedAt: Date?
-    
+    var id: String?
+    var creatorId: String?
+    var title: String?
+    var description: String?
+    var genre: String?
+    var category: String? //Category "Movie" "Highlight" "Thank you"
+    var keywords: [String]?
+    var originalUrl: String?
+    var hlsUrl: String?
 }
 

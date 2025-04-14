@@ -10,11 +10,8 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
-    @Published var videos: [Video] = load("videoData.json")
-    
-    
+
 }
-    
 
 func load<T: Decodable>(_ filename: String) -> T {
         let data: Data

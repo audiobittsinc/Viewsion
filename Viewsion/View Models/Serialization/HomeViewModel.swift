@@ -9,24 +9,44 @@
 import Foundation
 import Combine
 import SwiftUI
+import AVFoundation
 
 class HomeViewModel: ObservableObject {
-    //var categoryName: String
-    //@Published var movies: [Movie]
     @Published var home: Home?
-    
-    var categories: [String: [Movie]] {
-        Dictionary(
-            grouping: home!.movies,
-            by: { $0.category! }
-        )
+    @Published var videos: [Video]?
+    private var service: HomeService?
+    private var userId: String?
+    var user: UserId?
+    var categories: [String: [Movie]]?
+    {
+        if(home != nil)
+        {
+            return Dictionary(
+                grouping: home!.movies!,
+                by: { $0.genre! }
+            )
+        }
+        else {
+            return nil
+        }
     }
     
     init() {
-        //categoryName = "Monologue"
-        home = Home(movies: [Movie(id: "001-ABC", creatorId: "456-ABC", title: "My Pet Cat 1", description: "Sitting by the window", genre: "N/A", category: "Documentry", keywords: ["Story"], movieUrl: "", posterUrl: "", coverUrl: "https://media.npr.org/assets/img/2017/07/19/bb-01286_wide-80e1fc880848796ea5d4284a4aa5fd511774c0f3-s1600-c85.webp"), Movie(id: "001-ABC", creatorId: "456-ABC", title: "My Pet Cat 2", description: "Sitting by the window", genre: "N/A", category: "Documentry", keywords: ["Story"], movieUrl: "", posterUrl: "", coverUrl: "https://media.npr.org/assets/img/2017/07/19/bb-01286_wide-80e1fc880848796ea5d4284a4aa5fd511774c0f3-s1600-c85.webp"),Movie(id: "001-ABC", creatorId: "456-ABC", title: "My Pet Cat 3", description: "Sitting by the window", genre: "N/A", category: "Movie", keywords: ["Story"], movieUrl: "", posterUrl: "", coverUrl: "https://media.npr.org/assets/img/2017/07/19/bb-01286_wide-80e1fc880848796ea5d4284a4aa5fd511774c0f3-s1600-c85.webp"), Movie(id: "001-ABC", creatorId: "456-ABC", title: "My Pet Cat 4", description: "Sitting by the window", genre: "N/A", category: "Movie", keywords: ["Story"], movieUrl: "", posterUrl: "", coverUrl: "https://media.npr.org/assets/img/2017/07/19/bb-01286_wide-80e1fc880848796ea5d4284a4aa5fd511774c0f3-s1600-c85.webp")])
-        
+        service = HomeService()
     }
     
+
     
+    func Get() {
+        service?.Get() { result in
+            switch result {
+            case .success(let homeRes):
+                DispatchQueue.main.async { [self] in
+                    self.home = homeRes
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

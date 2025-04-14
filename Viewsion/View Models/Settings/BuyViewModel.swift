@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class BuyViewModel: ObservableObject {
+    @Published var myProduct: MyProduct // Product document for purchased product
+    var storeService: StoreService
+    var productPurchasedSuccessfully: Bool
+    
+    init(myProduct: MyProduct) {
+        self.myProduct = myProduct
+        storeService = StoreService()
+        productPurchasedSuccessfully = false
+    }
+    
+    func BuyNow(product: MyProduct) {
+        
+        
+    }   
+}

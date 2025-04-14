@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct ReactionModule: Decodable {
+    var emojis: [Emoji]
+    var userReaction: Reaction
+    var movieReactions: [Reaction]
+}

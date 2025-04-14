@@ -1,0 +1,6 @@
+framework module Pods_Viewsion {
+  umbrella header "Pods-Viewsion-umbrella.h"
+
+  export *
+  module * { export * }
+}
